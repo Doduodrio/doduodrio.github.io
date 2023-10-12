@@ -1,0 +1,84 @@
+body {
+  font-family: 'Courier New', Courier, monospace;
+  margin-top: 7.5%;
+  margin-left: 12.5%;
+  margin-right: 12.5%;
+}
+h1 {
+  font-variant: small-caps;
+  font-size: 3.25em;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+h2 {
+  margin-top: 1.33em;
+}
+h3 {
+  font-variant: small-caps;
+  font-size: 1.75em;
+  font-weight: normal;
+  margin-top: 0.33em;
+  margin-bottom: 1.33em;
+}
+p, .content li {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 1.25em;
+}
+a {
+  color: #000000;
+}
+a:hover, a:active {
+  text-decoration: none;
+}
+.nav {
+  position: absolute;
+  margin-top: 4em;
+}
+.nav ul {
+  text-align: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.nav li {
+  font-size: 1.33em;
+  float: left;
+}
+.nav a {
+  color: #000000;
+  background: none;
+  font-weight: bold;
+  text-decoration: none;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  padding-right: 1em;
+  padding-left: 1em;
+}
+.nav a:hover, .nav a:active, .nav a.current {
+  color: #ffffff;
+  background: #000000;
+}
+.line {
+  height: 2px;
+  background: #000000;
+  margin-top: 8.4em;
+}
+.content {
+  position: absolute;
+  margin: 0;
+  margin-top: 2em;
+  padding: 0;
+  width: 40em;
+  padding-bottom: 7.5%;
+}
+.logo {
+  height: 144px;
+  width: auto;
+  float: left;
+  margin-right: 2em;
+}
+
+.title {
+  position: relative;
+  top: 2em;
+}
