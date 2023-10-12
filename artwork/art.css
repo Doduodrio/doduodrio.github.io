@@ -1,0 +1,19 @@
+p {
+  font-size: auto;
+}
+
+.artwork {
+  padding-top: 2em;
+}
+.artwork ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.artwork li {
+  padding: 1em;
+}
+
+.art {
+  max-width: 350px;
+}
