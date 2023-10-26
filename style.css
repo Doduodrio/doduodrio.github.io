@@ -58,6 +58,9 @@ a:hover, a:active {
   color: #ffffff;
   background: #000000;
 }
+a:hover.secret {
+  background: none;
+}
 .line {
   height: 2px;
   background: #000000;
