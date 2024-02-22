@@ -1,0 +1,11 @@
+game {
+  width: 480px;
+  height: auto;
+  float: left;
+}
+.description {
+  width: 480px;
+  height: auto;
+  padding-left: 40px;
+  float: right;
+}
