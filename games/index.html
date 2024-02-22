@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -9,13 +9,18 @@
     <meta property="og:title" content="Games">
     <meta property="og:description" content="Take a deep breath.">
     <meta property="og:url" content="/">
-    <meta property="og:image" content="/assets/hey large white bg.png">
+    <meta property="og:image" content="/assets/hey_large_white_bg.png">
     <link href="/style.css" rel="stylesheet" type="text/css">
-    <link href="/assets/hey transparent.png" rel="icon">
+    <link href="/games/games.css" rel="stylesheet" type="text/css">
+    <link href="/assets/hey_transparent.png" rel="icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
   </head>
   <body>
     <header>
-      <img class="logo" src="/assets/hey large.png" title="The logo of this website.">
+      <img class="logo" src="/assets/hey_large.png" title="The logo of this website.">
       <div class="title">
         <h1>Doduodrio's Website</h1>
         <h3><em>Take a deep breath.</em></h3>
@@ -23,36 +28,39 @@
     </header>
     <div class="nav">
       <ul>
-        <li><a href="/">Welcome</a></li>
-        <li><a href="/artwork">Artwork</a></li>
-        <li><a class="current" href="/games">Games</a></li>
-        <li><a href="/about">About</a></li>
-        <li><a href="/secret" class="secret"></a></li>
+        <li><a href="/">ABOUT</a></li>
+        <li><a href="/art">ART</a></li>
+        <li><a class="current" href="/games">GAMES</a></li>
+        <li><a href="/secret" class="secret">SECRET</a></li>
       </ul>
     </div>
     <div class="line"></div>
     <!-- header ends here -->
     <div class="content">
-      <h1>Games</h1>
+      <h2>Games</h2>
       <p>Occasionally, I make games. Here are some that I've made.</p>
       <h2>Corn Maze</h2>
-      <iframe src="corn maze.html" allowtransparency="true" width="480" height="360" frameborder="0" scrolling="no" allowfullscreen title="Various characters from the game!"></iframe>
-      <p>It's a cool autumn day! Putting on your straw hat, you decide to visit the corn maze. I hear it's lovely this time of year...</p>
-      <p>Controls:</p>
-      <ul>
-        <li>Space - Start game (click game window first), talk to people, progress text</li>
-        <li>Arrow Keys - Move character around</li>
-      </ul>
-      <p>Originally posted on <a href="https://scratch.mit.edu/projects/796189129/" rel="noreferrer noopener" target="_blank">Scratch</a>.</p>
-      <h2>Rainbow Quest</h2>
-      <iframe src="https://replit.com/@IsaacIsAwesome/Rainbow-Quest?embed=true" width="600" height="600"></iframe>
-      <p>You are a brave adventurer on a quest to obtain the legendary Prism Sword! Make sure to read the tutorial! [GAME DOES NOT WORK AT PRESENT]</p>
-      <p>Controls:</p>
-      <ul>
-        <li>Mouse - Click the green Run button to run the project</li>
-        <li>Keyboard - Enter in numbers to select different options (the text cursor has been hidden, so don't worry if you can't see it)</li>
-      </ul>
-      <p>Originally posted on <a href="https://replit.com/@IsaacIsAwesome/Rainbow-Quest?v=1" rel="noreferrer noopener" target="_blank">Replit</a>.</p>
+      <iframe class="game" src="corn maze.html" allowtransparency="true" width="480" height="360" frameborder="0" scrolling="no" allowfullscreen title="Various characters from the game!"></iframe>
+      <div class="description">
+        <p>It's a cool autumn day! Putting on your straw hat, you decide to visit the corn maze. I hear it's lovely this time of year...</p>
+        <br>
+        <p>Controls:</p>
+        <p>- Space: Start game (click game window first), talk to people, progress text</p>
+        <p>- Arrow Keys: Move character around</p>
+        <!-- <br>
+        <p>Originally posted on <a href="https://scratch.mit.edu/projects/796189129/" rel="noreferrer noopener" target="_blank">Scratch</a>.</p> -->
+      </div>
+      <!-- <h2>Rainbow Quest</h2>
+      <iframe class="game" src="https://replit.com/@IsaacIsAwesome/Rainbow-Quest?embed=true" width="600" height="600"></iframe>
+      <div class="description">
+        <p>You are a brave adventurer on a quest to obtain the legendary Prism Sword! Make sure to read the tutorial!</p>
+        <p>Controls:</p>
+        <ul>
+          <li>Mouse - Click the green Run button to run the project</li>
+          <li>Keyboard - Enter in numbers to select different options (the text cursor has been hidden, so don't worry if you can't see it)</li>
+        </ul>
+        <p>Originally posted on <a href="https://replit.com/@IsaacIsAwesome/Rainbow-Quest?v=1" rel="noreferrer noopener" target="_blank">Replit</a>.</p>
+      </div> -->
       <!-- footer starts here -->
     </div>
   </body>
