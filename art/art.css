@@ -1,12 +1,46 @@
-.art {
-  width: 250px;
-  height: auto;
+.mainpage-content .gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
 }
-.big_art {
-  width: 400px;
-  height: auto;
+
+.mainpage-content .gallery-container a {
+    text-decoration: none;
 }
-.small_art {
-  width: 150px;
-  height: auto;
+
+.mainpage-content .tile {
+    margin-top: 30px;
+    width: 175px;
+    text-align: center;
+}
+
+.mainpage-content .tile img {
+    width: 100%;
+    transition: 400ms;
+}
+
+.mainpage-content .tile img:hover {
+    filter: brightness(0.7);
+}
+
+.mainpage-content .tile p {
+    margin-top: 0.5em;
+    font-weight: normal;
+}
+
+.mainpage-content .art-container img {
+    display: block;
+    margin-top: 2em;
+}
+
+.mainpage-content img.small-art {
+    display: inline-block;
+    width: 150px;
+}
+
+.mainpage-content img.big-art {
+    width: 500px;
+}
+
+.mainpage-content img.creature {
+    width: 400px;
 }
