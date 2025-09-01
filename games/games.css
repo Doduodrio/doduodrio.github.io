@@ -1,22 +1,39 @@
 .game-container {
-    display: flex;
+        display: flex;
+    }
+
+@media only screen and (min-width: 701px) {
+    .game-container img {
+        width: 300px;
+        height: 225px;
+    }
+
+    .game-container p {
+        margin-left: 30px;
+    }
+
+    .game {
+        display: block;
+        width: 600px;
+        height: 450px;
+    }
+
+    .game-instructions {
+        margin-top: 1em;
+    }
 }
 
-.game-container img {
-    width: 300px;
-    height: 225px;
-}
+@media only screen and (max-width: 700px) {
+    .game-container {
+        flex-direction: column;
+    }
 
-.game-container p {
-    margin-left: 30px;
-}
+    .game-container img {
+        width: 250px;
+        height: auto;
+    }
 
-.game {
-    display: block;
-    width: 600px;
-    height: 450px;
-}
-
-.game-instructions {
-    margin-top: 1em;
+    .game-container p {
+        margin-top: 1em;
+    }
 }

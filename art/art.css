@@ -37,10 +37,22 @@
     width: 150px;
 }
 
-.mainpage-content img.big-art {
-    width: 500px;
+@media only screen and (min-width: 701px) {
+    .mainpage-content img.big-art {
+        width: 500px;
+    }
+
+    .mainpage-content img.creature {
+        width: 400px;
+    }
 }
 
-.mainpage-content img.creature {
-    width: 400px;
+@media only screen and (max-width: 700px) {
+    .mainpage-content img.big-art {
+        width: 100%;
+    }
+
+    .mainpage-content img.creature {
+        width: 100%;
+    }
 }

@@ -1,129 +1,278 @@
-* {
-    margin: 0;
-    padding: 0;
+@media only screen and (min-width: 701px) {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    html,
+    body {
+        height: 100%;
+        font-family: 'Roboto Mono', Roboto;
+    }
+
+    .content {
+        min-height: 100%;
+    }
+
+    .content {
+        display: flex;
+    }
+
+    a {
+        color: #1a1a1a;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    hr {
+        border: none;
+        height: 2px;
+        background-color: #1a1a1a;
+    }
+
+    .sidebar {
+        width: 250px;
+        color: #f2e9d9;
+        background-color: #1a1a1a;
+        text-align: center;
+        flex-shrink: 0;
+    }
+
+    .sidebar-top {
+        padding: 30px 0;
+    }
+
+    .sidebar-top div.icon {
+        position: relative;
+        width: 100px;
+        height: 100px;
+        margin: 0 auto;
+    }
+
+    .sidebar-top img.icon {
+        width: 100%;
+        border-radius: 50%;
+    }
+
+    .sidebar-top img.icon.wink {
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+    }
+
+    .sidebar-top img.icon.wink:hover {
+        opacity: 1;
+    }
+
+    .sidebar-top h2 {
+        margin: 10px auto 0;
+        font-size: 1.8em;
+    }
+
+    .sidebar-top p {
+        margin: 10px auto 0;
+        font-size: 0.8em;
+        font-style: italic;
+    }
+
+    .sidebar hr {
+        background-color: #f2e9d9;
+    }
+
+    .sidebar li {
+        padding: 10px 0;
+        font-size: 1.2em;
+    }
+
+    .sidebar a {
+        color: #f2e9d9;
+        font-weight: normal;
+        text-decoration: none;
+    }
+
+    .sidebar li.active,
+    .sidebar li:hover {
+        color: #1a1a1a;
+        background-color: #f2e9d9;
+    }
+
+    .mainpage {
+        flex: 1;
+        background-color: #f2e9d9;
+    }
+
+    .mainpage-top {
+        padding-top: 50px;
+        padding-left: 50px;
+        padding-bottom: 30px;
+    }
+
+    .mainpage-content {
+        width: 650px;
+        padding: 0 50px 50px;
+    }
+
+    .mainpage-content h3 {
+        margin-top: 30px;
+        margin-bottom: 0.8em;
+        font-size: 1.4em;
+    }
+
+    .mainpage-content .return {
+        margin-top: 30px;
+    }
 }
 
-html,
-body {
-    height: 100%;
-    font-family: 'Roboto Mono', Roboto;
-}
+@media only screen and (max-width: 700px) {
+    * {
+        margin: 0;
+        padding: 0;
+    }
 
-.content,
-.sidebar,
-.mainpage {
-    min-height: 100%;
-}
+    html,
+    body {
+        height: 100%;
+        font-family: 'Roboto Mono', Roboto;
+    }
 
-.content {
-    display: flex;
-}
+    .content,
+    .mainpage {
+        min-height: 100%;
+    }
 
-a {
-    color: #1a1a1a;
-    font-weight: bold;
-    text-decoration: none;
-}
+    .content {
+        display: flex;
+        flex-direction: column;
+    }
 
-a:hover {
-    text-decoration: underline;
-}
+    a {
+        color: #1a1a1a;
+        font-weight: bold;
+        text-decoration: none;
+    }
 
-hr {
-    border: none;
-    height: 2px;
-    background-color: #1a1a1a;
-}
+    a:hover {
+        text-decoration: underline;
+    }
 
-.sidebar {
-    width: 250px;
-    color: #f2e9d9;
-    background-color: #1a1a1a;
-    text-align: center;
-    flex-shrink: 0;
-}
+    hr {
+        border: none;
+        height: 2px;
+        background-color: #1a1a1a;
+    }
 
-.sidebar-top {
-    padding: 30px 0;
-}
+    .sidebar {
+        width: 100%;
+        color: #f2e9d9;
+        background-color: #1a1a1a;
+        text-align: center;
+    }
 
-.sidebar-top div.icon {
-    position: relative;
-    width: 100px;
-    height: 100px;
-    margin: 0 auto;
-}
+    .sidebar-top {
+        display: flex;
+        padding: 30px 0;
+        text-align: left;
+    }
 
-.sidebar-top img.icon {
-    width: 100%;
-    border-radius: 50%;
-}
+    @media (width >= 380px) {
+        .sidebar-top {
+            padding: 30px;
+        }
+    }
 
-.sidebar-top img.icon.wink {
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0;
-}
+    @media (width < 380px) {
+        .sidebar-top {
+            width: 320px;
+            margin: auto;
+        }
+    }
 
-.sidebar-top img.icon.wink:hover {
-    opacity: 1;
-}
+    .sidebar-top div.icon {
+        position: relative;
+        flex-shrink: 0;
+        width: 100px;
+        height: 100px;
+    }
 
-.sidebar-top h2 {
-    margin: 10px auto 0;
-    font-size: 1.8em;
-}
+    .sidebar-top img.icon {
+        width: 100%;
+        border-radius: 50%;
+    }
 
-.sidebar-top p {
-    margin: 10px auto 0;
-    font-size: 0.8em;
-    font-style: italic;
-}
+    .sidebar-top img.icon.wink {
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+    }
 
-.sidebar hr {
-    background-color: #f2e9d9;
-}
+    .sidebar-top img.icon.wink:hover {
+        opacity: 1;
+    }
 
-.sidebar li {
-    padding: 10px 0;
-    font-size: 1.2em;
-}
+    .sidebar-top .website-title {
+        margin-left: 30px;
+    }
 
-.sidebar a {
-    color: #f2e9d9;
-    font-weight: normal;
-    text-decoration: none;
-}
+    .sidebar-top h2 {
+        font-size: 1.8em;
+    }
 
-.sidebar li.active,
-.sidebar li:hover {
-    color: #1a1a1a;
-    background-color: #f2e9d9;
-}
+    .sidebar-top p {
+        margin-top: 10px;
+        font-size: 0.8em;
+        font-style: italic;
+    }
 
-.mainpage {
-    flex: 1;
-    background-color: #f2e9d9;
-}
+    .sidebar hr {
+        background-color: #f2e9d9;
+    }
 
-.mainpage-top {
-    padding-top: 50px;
-    padding-left: 50px;
-    padding-bottom: 30px;
-}
+    .sidebar li {
+        padding: 10px 0;
+        font-size: 1.2em;
+    }
 
-.mainpage-content {
-    width: 650px;
-    padding: 0 50px 50px;
-}
+    .sidebar a {
+        color: #f2e9d9;
+        font-weight: normal;
+        text-decoration: none;
+    }
 
-.mainpage-content h3 {
-    margin-top: 30px;
-    margin-bottom: 0.8em;
-    font-size: 1.4em;
-}
+    .sidebar li.active,
+    .sidebar li:hover {
+        color: #1a1a1a;
+        background-color: #f2e9d9;
+    }
 
-.mainpage-content .return {
-    margin-top: 30px;
+    .mainpage {
+        padding-bottom: 10%;
+        background-color: #f2e9d9;
+    }
+
+    .mainpage-top {
+        padding-top: 30px;
+        padding-left: 10%;
+        padding-bottom: 30px;
+    }
+
+    .mainpage-content {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .mainpage-content h3 {
+        margin-top: 30px;
+        margin-bottom: 0.8em;
+        font-size: 1.4em;
+    }
+
+    .mainpage-content .return {
+        margin-top: 30px;
+    }
 }
