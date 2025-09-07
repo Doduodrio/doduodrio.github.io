@@ -2,6 +2,14 @@
     display: flex;
 }
 
+.game-container img {
+    transition: 400ms;
+}
+
+.game-container img:hover {
+    filter: brightness(0.7);
+}
+
 .game-instructions {
     margin-top: 1em;
 }
