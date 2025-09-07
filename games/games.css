@@ -10,6 +10,10 @@
     filter: brightness(0.7);
 }
 
+.game-container p {
+    margin-top: 1em;
+}
+
 .game-instructions {
     margin-top: 1em;
 }
@@ -39,10 +43,6 @@
     .game-container img {
         width: 250px;
         height: auto;
-    }
-
-    .game-container p {
-        margin-top: 1em;
     }
 
     .game {
