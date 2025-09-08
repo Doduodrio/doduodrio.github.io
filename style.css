@@ -1,4 +1,8 @@
-@media only screen and (min-width: 701px) {
+body {
+    background-color: #f2e9d9;
+}
+
+@media only screen and (min-width: 700.01px) {
     * {
         margin: 0;
         padding: 0;
@@ -67,6 +71,14 @@
 
     .sidebar-top img.icon.wink:hover {
         opacity: 1;
+    }
+
+    .sidebar-top .icon .secret {
+        position: absolute;
+        top: 55px;
+        left: 52px;
+        width: 8px;
+        height: 8px;
     }
 
     .sidebar-top h2 {
