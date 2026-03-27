@@ -27,6 +27,7 @@ function prependMessage(name, created_at, message) {
     const messageHeader = document.createElement('div');
     messageHeader.setAttribute('class', 'header');
     messageHeader.appendChild(nameContent);
+    messageHeader.appendChild(timestamp);
 
     // create message body
     const messageContent = document.createElement('p');
