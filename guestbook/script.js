@@ -102,7 +102,7 @@ async function loadMessages() {
     else {
         console.log('Retrieved data');
         for (let i=0; i<data.length; i++) {
-            prependMessage(data[i].name, data[i].created_at, data[i].message);
+            if (!data[i].hidden) {prependMessage(data[i].name, data[i].created_at, data[i].message);}
         }
         console.log('Loaded messages');
     }
