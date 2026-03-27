@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="theme-color" content="#f2e9d9">
+
+        <meta property="og:title" content="Doduodrio's Website">
+        <meta property="og:description" content="Hello, I'm Doduodrio and thanks for stopping by!">
+        <meta property="og:url" content="https://doduodrio.github.io/">
+        <meta property="og:image" content="/hey.png">
+
+        <title>Guestbook - Doduodrio's Website</title>
+        <link href="../style.css" rel="stylesheet" type="text/css">
+        <link href="./guestbook.css" rel="stylesheet" type="text/css">
+        <link href="../hey_icon_transparent.png" rel="icon">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+
+        <script type="module" src="./script.js"></script>
+    </head>
+    <body>
+        <div class="content">
+            <div class="sidebar">
+                <div class="sidebar-top">
+                    <div class="icon">
+                        <img class="icon" src="../hey.png" alt="hey">
+                        <img class="icon wink" src="../hey_wink.png" alt="hey_wink">
+                    </div>
+                    <div class="website-title">
+                        <h2>Doduodrio's Website</h2>
+                        <p>Take a deep breath.</p>
+                    </div>
+                </div>
+                <nav>
+                    <ul>
+                        <hr>
+                        <a href="../"><li class="active">ABOUT</li></a>
+                        <hr>
+                        <a href="../art"><li>ART</li></a>
+                        <hr>
+                        <a href="../games"><li>GAMES</li></a>
+                        <hr>
+                    </ul>
+                </nav>
+            </div>
+            <div class="mainpage">
+                <div class="mainpage-top">
+                    <h1>GUESTBOOK</h1>
+                </div>
+                <hr>
+                <div class="mainpage-content">
+                    <h3>SIGN THE GUESTBOOK</h3>
+                    <div class="input-box">
+                        <h4>Name:</h4>
+                        <textarea id="name-box" placeholder="Name or username" rows="1" spellcheck="false"></textarea>
+                        <br>
+                        <h4>Message:</h4>
+                        <textarea id="message-box" placeholder="Type a message..." rows="4" spellcheck="false"></textarea>
+                        <br>
+                        <button id="send-button">Submit Message</button>
+                    </div>
+                    <h3>MESSAGES</h3>
+                    <div id="messages">
+                        <div class="guestbook-post">
+                            <p><strong>From:</strong> Bobby</p>
+                            <br>
+                            <p>Wow this website is so cool :0</p>
+                        </div>
+                        <div class="guestbook-post">
+                            <p><strong>From:</strong> Tyler</p>
+                            <br>
+                            <p>does this actually work</p>
+                        </div>
+                        <div class="guestbook-post">
+                            <p><strong>From:</strong> Doduodrio</p>
+                            <br>
+                            <p>Hello World</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

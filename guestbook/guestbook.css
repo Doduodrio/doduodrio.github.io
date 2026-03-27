@@ -1,0 +1,38 @@
+.input-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-box textarea {
+    padding: 4px;
+    box-sizing: border-box;
+    border: 1px solid #1a1a1a;
+    font-family: 'Roboto Mono', Roboto;
+    resize: none;
+}
+
+.input-box button {
+    padding: 4px;
+    box-sizing: border-box;
+    border: 1px solid #1a1a1a;
+    color: #f2e9d9;
+    background-color: #1a1a1a;
+    font-family: 'Roboto Mono', Roboto;
+    font-weight: bold;
+}
+
+.input-box button:hover {
+    cursor: pointer;
+}
+
+.guestbook-post {
+    margin-bottom: 16px;
+    padding: 32px;
+    box-sizing: border-box;
+    border: 2px solid #1a1a1a;
+    border-radius: 4px;
+}
+
+.guestbook-post h3 {
+    margin-top: 0px;
+}
