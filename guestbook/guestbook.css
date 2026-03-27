@@ -1,17 +1,4 @@
-.input-box {
-    display: flex;
-    flex-direction: column;
-}
-
-.input-box textarea {
-    padding: 4px;
-    box-sizing: border-box;
-    border: 1px solid #1a1a1a;
-    font-family: 'Roboto Mono', Roboto;
-    resize: none;
-}
-
-.input-box button {
+button {
     padding: 4px;
     box-sizing: border-box;
     border: 1px solid #1a1a1a;
@@ -21,18 +8,48 @@
     font-weight: bold;
 }
 
-.input-box button:hover {
+button:hover {
     cursor: pointer;
 }
 
-.guestbook-post {
-    margin-bottom: 16px;
-    padding: 32px;
+#input-box {
+    display: flex;
+    flex-direction: column;
+}
+
+#input-box textarea {
+    padding: 4px;
+    box-sizing: border-box;
+    border: 1px solid #1a1a1a;
+    font-family: 'Roboto Mono', Roboto;
+    resize: none;
+}
+
+#refresh-button {
+    margin-bottom: 24px;
+}
+
+.guestbook-message {
+    margin-bottom: 24px;
+    /* padding: 32px; */
     box-sizing: border-box;
     border: 2px solid #1a1a1a;
     border-radius: 4px;
 }
 
-.guestbook-post h3 {
+.guestbook-message h3 {
     margin-top: 0px;
+}
+
+.guestbook-message .header {
+    padding: 8px 16px;
+    display: flex;
+    justify-content: space-between;
+    color: #f2e9d9;
+    background-color: #1a1a1a;
+    font-weight: bold;
+}
+
+.guestbook-message .body {
+    padding: 16px;
 }
