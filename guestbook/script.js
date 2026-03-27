@@ -17,21 +17,28 @@ const messages      = document.getElementById('messages')
 function prependMessage(name, created_at, message) {
     const date = new Date(created_at);
 
+    // create message header
+    const nameContent = document.createElement('p');
+    nameContent.innerText = name;
+    const timestamp = document.createElement('time');
+    timestamp.setAttribute('datetime', date.toISOString())
+             .setAttribute('title', date.toLocaleString());
+    timestamp.innerText = ta.format(created_at);
+    const messageHeader = document.createElement('div');
+    messageHeader.setAttribute('class', 'header');
+    messageHeader.appendChild(nameContent);
+
+    // create message body
     const messageContent = document.createElement('p');
     messageContent.innerText = message;
-
     const messageBody = document.createElement('div');
     messageBody.setAttribute('class', 'body');
     messageBody.appendChild(messageContent);
 
+    // create message
     const newMessage = document.createElement('div');
     newMessage.className = 'guestbook-message';
-    newMessage.innerHTML = `
-        <div class="header">
-            <p>From: ${name}</p>
-            <time datetime="${date.toISOString()}" title="${date.toLocaleString()}">${ta.format(created_at)}</time>
-        </div>
-    `;
+    newMessage.appendChild(messageHeader);
     newMessage.appendChild(messageBody);
     messages.prepend(newMessage);
 }
