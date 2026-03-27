@@ -19,18 +19,18 @@ function prependMessage(name, created_at, message) {
 
     // create message header
     const nameContent = document.createElement('p');
-    nameContent.innerText = name;
+    nameContent.textContent = name;
     const timestamp = document.createElement('time');
     timestamp.setAttribute('datetime', date.toISOString())
              .setAttribute('title', date.toLocaleString());
-    timestamp.innerText = ta.format(created_at);
+    timestamp.textContent = ta.format(created_at);
     const messageHeader = document.createElement('div');
     messageHeader.setAttribute('class', 'header');
     messageHeader.appendChild(nameContent);
 
     // create message body
     const messageContent = document.createElement('p');
-    messageContent.innerText = message;
+    messageContent.textContent = message;
     const messageBody = document.createElement('div');
     messageBody.setAttribute('class', 'body');
     messageBody.appendChild(messageContent);
@@ -41,7 +41,7 @@ function prependMessage(name, created_at, message) {
     newMessage.appendChild(messageHeader);
     newMessage.appendChild(messageBody);
     messages.prepend(newMessage);
-}
+}4
 
 async function submitMessage() {
     let name = nameBox.value?.trim();
@@ -91,7 +91,7 @@ async function loadMessages() {
     messages.innerHTML = '';
 
     const loading = document.createElement('p');
-    loading.innerText = 'Loading messages...';2
+    loading.textContent = 'Loading messages...';2
     messages.appendChild(loading);
 
     // get data from supabase
