@@ -21,8 +21,8 @@ function prependMessage(name, created_at, message) {
     const nameContent = document.createElement('p');
     nameContent.textContent = name;
     const timestamp = document.createElement('time');
-    timestamp.setAttribute('datetime', date.toISOString())
-             .setAttribute('title', date.toLocaleString());
+    timestamp.setAttribute('datetime', date.toISOString());
+    timestamp.setAttribute('title', date.toLocaleString());
     timestamp.textContent = ta.format(created_at);
     const messageHeader = document.createElement('div');
     messageHeader.setAttribute('class', 'header');
