@@ -16,6 +16,10 @@ const messages      = document.getElementById('messages')
 
 function prependMessage(name, created_at, message) {
     const date = new Date(created_at);
+
+    const messageContent = document.createElement('p');
+    messageContent.innerText = message;
+
     const newMessage = document.createElement('div');
     newMessage.className = 'guestbook-message';
     newMessage.innerHTML = `
@@ -24,7 +28,7 @@ function prependMessage(name, created_at, message) {
             <time datetime="${date.toISOString()}" title="${date.toLocaleString()}">${ta.format(created_at)}</time>
         </div>
         <div class="body">
-            <p>${message}</p>
+            ${messageContent.outerHTML}
         </div>
     `;
     messages.prepend(newMessage);
