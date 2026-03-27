@@ -41,7 +41,7 @@ function prependMessage(name, created_at, message) {
     newMessage.appendChild(messageHeader);
     newMessage.appendChild(messageBody);
     messages.prepend(newMessage);
-}4
+}
 
 async function submitMessage() {
     let name = nameBox.value?.trim();
