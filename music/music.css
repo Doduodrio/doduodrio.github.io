@@ -1,0 +1,67 @@
+.song {
+    margin-bottom: 24px;
+    box-sizing: border-box;
+    border: 2px solid #1a1a1a;
+    border-radius: 4px;
+}
+
+.song .header {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 16px;
+    color: #f2e9d9;
+    background-color: #1a1a1a;
+    font-weight: bold;
+}
+
+.song .body {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 16px;
+}
+
+.play-button {
+    width: 32px;
+    height: 32px;
+    border: none;
+    border-radius: 16px;
+    color: #f2e9d9;
+    background-color: #1a1a1a;
+    font-size: 1.75em;
+}
+
+.play-button:hover {
+    cursor: pointer;
+}
+
+.play-button .icon {
+    position: relative;
+    top: -6px;
+}
+
+.bar-box {
+    width: 85%;
+    height: 4px;
+    padding: 14px 0px;
+}
+
+.bar-box:hover {
+    cursor: pointer;
+}
+
+.bar {
+    height: 100%;
+}
+
+.background-bar {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.progress-bar {
+    position: relative;
+    top: -4px;
+    width: 0%;
+    background-color: #1a1a1a;
+}
