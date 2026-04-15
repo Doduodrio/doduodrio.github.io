@@ -29,7 +29,7 @@ for (let i=0; i<allSongs.length; i++) {
     // add event listeners to buttons
     song.button.onclick = function(){
         if (song.playing) {
-            song.button.firstChild.textContent = '⏵︎';
+            song.button.firstChild.setAttribute('src', 'play.svg');
             song.audio.pause();
         }
         else {
@@ -37,7 +37,7 @@ for (let i=0; i<allSongs.length; i++) {
                 // if song ended, restart it
                 song.audio.currentTime = 0;
             }
-            song.button.firstChild.textContent = '⏸︎';
+            song.button.firstChild.setAttribute('src', 'pause.svg');
             song.audio.play();
 
             // pause other songs that are playing
