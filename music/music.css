@@ -14,6 +14,11 @@
     font-weight: bold;
 }
 
+.song .header .duration {
+    flex-shrink: 0;
+    margin-left: 16px;
+}
+
 .song .body {
     display: flex;
     align-items: center;
