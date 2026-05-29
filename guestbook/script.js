@@ -111,6 +111,7 @@ async function loadMessages() {
     }
     else {
         console.log('Retrieved data');
+        data.sort((a, b) => a.id - b.id);
         for (let i=0; i<data.length; i++) {
             if (!data[i].hidden) {prependMessage(data[i].name, data[i].created_at, data[i].message);}
         }
